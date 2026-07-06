@@ -1,0 +1,83 @@
+{
+  "name": "richdiff",
+  "version": "0.1.1",
+  "description": "Configurable rich-text HTML diff. Choose which formatting tags (bold, italic, links, styles) participate in diff — not too noisy, not too coarse.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "diff",
+    "rich-text-diff",
+    "html-diff",
+    "text-diff",
+    "text-comparison",
+    "content-diff",
+    "document-diff",
+    "version-diff",
+    "configurable",
+    "inline-diff",
+    "side-by-side",
+    "word-diff",
+    "lcs",
+    "highlight",
+    "decorated-html",
+    "tiptap",
+    "prosemirror",
+    "quill",
+    "tinymce",
+    "ckeditor",
+    "vue",
+    "react",
+    "typescript",
+    "rich-text",
+    "wysiwyg",
+    "html",
+    "diffchars",
+    "jsdiff",
+    "longest-common-subsequence"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "diff": "^5.1.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/diff": "^5.0.8",
+    "@types/jsdom": "^28.0.3",
+    "jsdom": "^29.1.1",
+    "tsup": "^8.0.0",
+    "typescript": "~5.3.3",
+    "vitest": "^4.1.9"
+  },
+  "homepage": "https://github.com/Beiyul/richdiff",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beiyul/richdiff.git"
+  },
+  "author": "Beiyul",
+  "bugs": {
+    "url": "https://github.com/Beiyul/richdiff/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "sideEffects": false
+}
